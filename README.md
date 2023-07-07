@@ -1,7 +1,7 @@
 # Curso-Python PIP
 Repositorio realizado en el curso de Python: PIP y entornos virtuales
 
-# Steps
+# Pasos a seguir
 
 # Game Project
 
@@ -12,7 +12,6 @@ Para correr el juego debes seguir las siguientes instrucciones en la terminal:
 cd game
 python3 Jankenpo.py
 ```
-
 
 # App Project
 
