@@ -26,6 +26,8 @@ Ahora, si no tienes VSC y quieres ejecutar desde el terminal:
 ```sh
 pip install matplotlib
 pip install pandas
-sudo apt-get install python3-tk #Una alternativa puede ser <pip install pyqt5>, una GUI backend de matplotlib. NO usar ambas al mismo tiempo.
+sudo apt-get install python3-tk 
+#pip install pyqt5 #puede ser una alternativa al GUI backend de la línea anterior.
+#NO usar ambas GUI backend al mismo tiempo.
 cd population
 ```
