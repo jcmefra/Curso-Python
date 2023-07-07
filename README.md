@@ -3,7 +3,7 @@ Repositorio realizado en el curso de Python: PIP y entornos virtuales
 
 # Pasos a seguir
 
-# Game Project
+# Game 
 
 
 Para correr el juego debes seguir las siguientes instrucciones en la terminal:
@@ -13,13 +13,10 @@ cd game
 python3 Jankenpo.py
 ```
 
-# App Project
+# Population
 
 ```sh
-git clone
-cd app
-python3 -m venv env
-source env/bin/activate
-pip3 install -r requirements.txt
-python3 main.py
+cd population
+code . #Solo si tienes VSC, debes tener instalado Pandas, matplotlib y Numpy
 ```
+Ejecutas el código Population.py siguiendo sus directrices de selección de país y continente.
