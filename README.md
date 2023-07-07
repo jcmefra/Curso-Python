@@ -1,2 +1,6 @@
 # Curso-Python PIP
-# Curso de PIP y entornos virtuales de Platzi
+Repositorio realizado en el curso de Python: PIP y entornos virtuales
+
+# Steps
+
+
