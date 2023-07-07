@@ -1,2 +1,2 @@
-# Curso-Python
-# Curso-Python
+# Curso-Python PIP
+# Curso de PIP y entornos virtuales de Platzi
