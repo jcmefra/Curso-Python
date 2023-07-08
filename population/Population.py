@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-df1 = pd.read_csv('./population/data.csv') #Leer el CSV con Pandas
+df1 = pd.read_csv('data.csv') #Leer el CSV con Pandas
 df2 = df1.set_index('Country/Territory', drop = False) #Definir columna índice o principal
 continente = input('Type continent name: ')
 
