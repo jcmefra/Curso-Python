@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import matplotlib.cm as cm
 
 #Branch experimental
 
@@ -19,12 +20,27 @@ while True:
         sizes = world_ppl_per.tolist() #Convertir la columna World Population Percentage en una lista
 
         fig, ax = plt.subplots()
-        ax.pie(sizes, autopct='%1.1f%%')
-        ax.axis('equal')
-        ax.legend(labels=labels, loc = 'center left', ncol=2)
+
+        # Asignar un color distinto a cada barra
+        colormap = plt.cm.rainbow
+        colors = colormap(np.linspace(0, 1, len(labels)))
+        ax.bar(labels, sizes, color=colors)
+        #ax.bar(labels, sizes)
+
         plt.title('Población mundial por país (%)')
-        plt.subplots_adjust(bottom=0.1, left = 0.1) #ajustar el margen para no cortar las labels
-        fig.set_size_inches(19, 9.5)
+        plt.xlabel('País', labelpad=10)
+        plt.ylabel('Porcentaje de población')
+
+        plt.xticks(rotation=90) #Rota 90 grados las etiquetas
+
+        ax.tick_params(axis='x', labelsize=6.5)  # Ajusta el tamaño de fuente (8 es un ejemplo, ajusta según tus necesidades)
+
+        # Ajustar los márgenes
+        plt.subplots_adjust(bottom=0.35, left=0.12, right=0.95, top=0.9)  # Ajusta los valores según tus necesidades
+
+        # Ajustar los límites del eje y
+        ax.set_ylim(0, max(sizes) * 1.1)  # Ajusta el factor multiplicativo según tus necesidades
+
         plt.savefig('ppl_{}.png'.format(continente))
         plt.close()
         print("Graphic was generated and saved successfully")
