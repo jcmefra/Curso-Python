@@ -34,7 +34,7 @@ pip install -r requirements.txt
 python3 Population.py
 ```
 
-#Dockerfiles
+# Dockerfiles
 
 ¡Sirven para usar docker! Dentro de la terminal debes efectuar:
 
