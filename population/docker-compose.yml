@@ -1,7 +1,7 @@
 services:
-  app-csv:
+  ppl-csv:
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/app
+      - .:/population

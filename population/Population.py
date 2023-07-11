@@ -11,7 +11,7 @@ lista_continentes = df1['Continent'].unique()
 print ('Elija uno de los siguientes continentes: ' + ', '.join(lista_continentes))
 while True:
 
-    continente = input('Type continent name: ')
+    continente = input('Type continent name ---> ')
     df3 = df2[df2['Continent'] == continente] #Filtrar por continente
     if not df3.empty:
         world_ppl_per = df3['World Population Percentage'] #Extraer la columna que necesitamos

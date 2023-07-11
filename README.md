@@ -33,3 +33,17 @@ cd population
 pip install -r requirements.txt
 python3 Population.py
 ```
+
+#Dockerfiles
+
+¡Sirven para usar docker! Dentro de la terminal debes efectuar:
+
+```sh
+cd population
+docker-compose build # Para crear el docker
+docker-compose up -d # Para lanzarlo
+docker-compose ps # Para ver el estado del contenedor
+docker-compose exec ppl-csv bash # Para ingresar al docker y desarrollar ahi
+```
+
+Y ya tendrás tu entorno de desarrollo en un contenedor Docker.
