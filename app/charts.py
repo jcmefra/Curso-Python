@@ -3,13 +3,14 @@ import matplotlib.pyplot as plt
 def generate_bar_chart(labels, values):
   fig, ax = plt.subplots()
   ax.bar(labels, values)
-  plt.show()
+  plt.savefig('./app/bar')
 
 def generate_pie_chart(labels, values):
   fig, ax = plt.subplots()
-  ax.pie(values, labels=labels)
+  ax.pie(values)
   ax.axis('equal')
-  plt.show()
+  ax.legend( labels=labels, loc='center left')
+  plt.savefig('./app/pie')
 
 if __name__ == '__main__':
   labels = ['a', 'b', 'c']
